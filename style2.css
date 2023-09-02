@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(
+        134.34% 134.34% at 50% 0%,
+        #1f3757 0%,
+        #131537 100%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scoreboard{
+    width: 400;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-top: 30px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    margin-left: 30px;
+}
+.title img{
+    height: 80px;
+    width: auto;
+    margin-bottom: -6px;
+    margin-left: -16px;
+
+}
+
+.score{
+    width: 111px;
+    height: 82px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 100px;
+    margin-right: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.score h1{
+    color: #565456;
+    font-size: 30px;
+}
+
+.score p{
+    color: #2a45c2;
+    font-size: 23px;
+    font-weight: 600px;
+    line-height: 20px;
+    letter-spacing: 2.5px;
+
+}
+
+.hands{
+    background-image: url("assets/triangle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 476px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.hand img{
+    height: 150px;
+    width: 150px;
+}
+
+.scissors{
+    margin-left: 20px;
+}
+.paper{
+    margin-right: 75px;
+}
+
+.hands .hand{
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.hands .hand:hover{
+    transform: translate3d(0px, -8px, 0px);;
+}
+
+.contest{
+    width: 643px;
+    height: 371px;
+    display: none;
+    margin-top: 16px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contest img{
+    width: 150px;
+    height: 150px;
+}
+.userhand {
+    margin-left: 60px;
+}
+.computerhand {
+    margin-right: 125px;
+}
+.contest > div {
+    flex: 1;
+}
+
+.contest h1{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 43px;
+    text-align: center;
+}
+
+.handimageContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.referee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: -100px;
+    margin-left: 200px;
+
+}
+
+.referee h1{
+    font-size: 45px;
+}
+
+.newGame {
+    background-color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: hsl(229, 25%, 31%);
+    transition: 0.15s;
+}
+.newGame:hover{
+    background-color: bisque;
+    transform: translate3d(0px, -2px, 0px);
+}
